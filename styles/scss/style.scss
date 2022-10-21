@@ -5,6 +5,7 @@ $green: #1E6140;
 $light-green: #84BE51;
 $brown: #8C3213;
 $orange: #E74E13;
+$white: #fff;
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -23,39 +24,151 @@ body {
 	flex: 1 1 auto;
 }
 
-[class*="__container-max"]{
+[class*="container-max"]{
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
-[class*="__container-min"]{
+[class*="container-min"]{
 	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
 @media (max-width: 1109.98px) {
-	[class*="__container-max"]{
+	[class*="container-max"]{
 		max-width: 970px;
 	}
-	[class*="__container-min"]{
+	[class*="container-min"]{
 		max-width: 970px;
 	}
 }
 @media (max-width: 990.98px) {
-	[class*="__container-max"]{
+	[class*="container-max"]{
 		max-width: 750px;
 	}
-	[class*="__container-min"]{
+	[class*="container-min"]{
 		max-width: 750px;
 	}
 }
 @media (max-width: 767.98px) {
-	[class*="__container-max"]{
+	[class*="container-max"]{
 		max-width: none;
 	}
-	[class*="__container-min"]{
+	[class*="container-min"]{
 		max-width: none;
 	}
+}
+.header {
+
+		&__inner {
+			background-color: #1E6140;
+			min-height: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		&__content {
+			display: flex;
+		}
+
+		&__menu {
+			display: flex;
+		}
+
+		&__menu-list {
+			position: relative;
+		}
+
+		&__menu-list:hover &__sub-menu-list {
+			display: block;
+		}
+
+		&__menu-list>li {
+			margin-right: 45px;
+		}
+
+		&__menu-item {
+		}
+
+		&__menu-link {
+			color: #fff;
+			font-weight: 300;
+			line-height: 20px;
+		}
+
+		&__sub-menu-list {
+			display: none;
+			position: absolute;
+			top: 15px;
+			left: 0;
+			padding-top: 20px;
+		}
+
+		&__sub-menu-item {
+			background-color: #347153;
+			width: 160px;
+		}
+
+		&__sub-menu-link {
+			color: #fff;
+		}
+
+		&__registration {
+		}
+
+		&__registration-list {
+			display: flex;
+		}
+	
+		&__registration-item {
+		}
+	
+		&__registration-link {
+			color: #fff;
+			font-weight: 300;
+			line-height: 20px;
+			padding-right: 15px;
+		}
+
+		&__navigation {
+		}
+
+		&__logo {
+		}
+
+		&__search {
+		}
+
+		&__contacts {
+		}
+
+		&__img {
+		}
+
+		&__text {
+		}
+
+		&__information {
+		}
+
+		&__categories {
+		}
+
+		&__item-1 {
+		}
+
+		&__item-2 {
+		}
+
+		&__item-3 {
+		}
+
+		&__item-4 {
+		}
+
+		&__item-5 {
+		}
 }
