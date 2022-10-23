@@ -73,6 +73,7 @@ body {
 		}
 
 		&__menu {
+			margin-top: 13px;
 		}
 
 		&__menu-list {
@@ -81,6 +82,7 @@ body {
 
 		&__menu-item {
 			margin-right: 45px;
+
 			&:last-child {
 				margin-right: 0px;
 			}
@@ -92,7 +94,14 @@ body {
 			line-height: 20px;
 		}
 
+		&__decor {
+			width: 1px;
+			height: 50px;
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
 		&__registration {
+			margin-top: 13px;
 		}
 
 		&__registration-list {
@@ -101,8 +110,29 @@ body {
 
 		&__registration-item {
 			margin-right: 20px;
+
 			&:last-child {
 				margin-right: 0px;
+			}
+
+			&:first-child:before {
+				content: '';
+				cursor: pointer;
+				position: absolute;
+				background-image: url("../../img/icons/navigation_login.svg");
+				width: 20px;
+				height: 20px;
+				margin-left: -25px;
+			}
+
+			&:last-child::before {
+				content: '';
+				position: absolute;
+				width: 1px;
+				height: 17px;
+				background-color: #fff;
+				margin-top: 1px;
+				margin-left: -10px;
 			}
 		}
 
@@ -113,6 +143,12 @@ body {
 		}
 
 		&__navigation {
+		}
+
+		&__navigation-wrap {
+			background-image: url("../../img/navigation_background.jpg");
+			height: 1000px;
+			padding-top: 20px;
 		}
 
 		&__logo {
