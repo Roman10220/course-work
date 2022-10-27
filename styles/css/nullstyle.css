@@ -71,4 +71,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
 /*--------------------*/
