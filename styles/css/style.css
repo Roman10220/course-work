@@ -263,11 +263,23 @@ body {
   line-height: 17px;
   text-decoration: underline;
 }
+.header__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .header__information a {
   margin-right: 16px;
 }
-.header__information a:last-child {
-  margin: 0px;
+.header__information-value {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  margin-left: -10px;
 }
 .header__categories {
   margin-top: 35px;
@@ -361,9 +373,19 @@ body {
   line-height: 67px;
   color: #000;
   margin-bottom: 28px;
+  position: relative;
 }
 .header__body-wrap h1 span {
   font-weight: 700;
+}
+.header__body-wrap h1::before {
+  content: "";
+  background: url("../../img/icons/main/about-us-sheet.svg") no-repeat;
+  position: absolute;
+  top: 25px;
+  left: -40px;
+  width: 32px;
+  height: 25px;
 }
 .header__body-wrap p {
   font-weight: 400;
@@ -394,6 +416,78 @@ body {
   height: 477px;
 }
 
+/*******************************/
+.about-us {
+  margin-top: 100px;
+}
+.about-us__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-us__info {
+  width: 540px;
+}
+.about-us__title h3 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: #000;
+  margin-bottom: 25px;
+  margin-left: 45px;
+  position: relative;
+}
+.about-us__title h3::before {
+  content: "";
+  background: url("../../img/icons/main/about-us-sheet.svg") no-repeat;
+  position: absolute;
+  top: 15px;
+  left: -45px;
+  width: 32px;
+  height: 25px;
+}
+.about-us__text :last-child {
+  margin-bottom: 0px;
+}
+.about-us__text p {
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 18px;
+}
+.about-us__text-color {
+  font-weight: 700;
+  color: #1E6140;
+}
+.about-us__button {
+  margin-top: 37px;
+}
+.about-us__button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 47px;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 90px;
+  background-color: #E74E13;
+  color: #fff;
+}
+
+/*******************************/
 .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
