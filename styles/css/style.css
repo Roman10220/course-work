@@ -210,9 +210,11 @@ body {
   font-weight: 300;
   line-height: 20px;
 }
+.header__navigation {
+  padding-top: 20px;
+}
 .header__navigation-wrap {
   background: url("../../img/header/navigation_background.jpg") no-repeat;
-  padding-top: 20px;
 }
 .header__logo {
   width: 158px;
@@ -484,6 +486,114 @@ body {
   line-height: 20px;
   border-radius: 90px;
   background-color: #E74E13;
+  color: #fff;
+}
+
+.seeds {
+  margin-top: 115px;
+}
+.seeds__wrap {
+  background: url("../../img/main/seeds-backg.jpg") 0 0/100% 100% no-repeat;
+  min-height: 625px;
+  padding-top: 110px;
+}
+.seeds__content h2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 30px;
+  margin-left: 45px;
+  color: #fff;
+  position: relative;
+}
+.seeds__content h2::before {
+  content: "";
+  background: url("../../img/icons/main/about-us-sheet.svg") no-repeat;
+  position: absolute;
+  top: 15px;
+  left: -45px;
+  width: 32px;
+  height: 25px;
+}
+.seeds__content p {
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.regist__content {
+  margin-top: 80px;
+}
+.regist__text {
+  text-align: center;
+}
+.regist__text h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.regist__text p {
+  font-weight: 400;
+  line-height: 20px;
+}
+.regist__body {
+  margin-top: 21px;
+}
+.regist__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.regist__style {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 90px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #484848;
+  width: 255px;
+  height: 40px;
+  padding: 0 20px 0 20px;
+  margin-bottom: 20px;
+}
+.regist__style:nth-child(1) {
+  margin-right: 30px;
+}
+.regist__style:nth-child(3) {
+  margin-right: 30px;
+}
+.regist__style:last-child {
+  margin-bottom: 0px;
+}
+.regist__style-password {
+  width: 540px;
+}
+.regist__checkbox {
+  width: 20px;
+  height: 20px;
+}
+.regist__checkbox-text {
+  font-weight: 400;
+  line-height: 20px;
+  color: #484848;
+  margin-left: 5px;
+}
+.regist__checkbox-text-link {
+  color: #84BE51;
+}
+.regist__btn {
+  margin-top: 28px;
+  background: #E74E13;
+  width: 540px;
+  font-weight: 700;
+  line-height: 20px;
   color: #fff;
 }
 

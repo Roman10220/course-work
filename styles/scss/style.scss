@@ -143,11 +143,11 @@ body {
 	}
 
 	&__navigation {
+		padding-top: 20px;
 	}
 
 	&__navigation-wrap {
 		background: url("../../img/header/navigation_background.jpg") no-repeat;
-		padding-top: 20px;
 	}
 
 	&__logo {
@@ -449,6 +449,124 @@ body {
 			}
 		}
 }
+.seeds {
+	margin-top: 115px;
+	&__wrap {
+		background: url('../../img/main/seeds-backg.jpg') 0 0/100% 100% no-repeat;
+		min-height: 625px;
+		padding-top: 110px;
+	}
+
+	&__content {
+		h2 {
+			font-weight: 700;
+			font-size: 45px;
+			line-height: 55px;
+			margin-bottom: 30px;
+			margin-left: 45px;
+			color: $white;
+			position: relative;
+			&::before {
+				content: '';
+				background: url("../../img/icons/main/about-us-sheet.svg") no-repeat;
+				position: absolute;
+				top: 15px;
+				left: -45px;
+				width: 32px;
+				height: 25px;
+			}
+		}
+		p {
+			font-weight: 400;
+			line-height: 20px;
+			margin-bottom: 20px;
+			color: $white;
+		}
+	}
+}
+.regist {
+
+	&__content {
+		margin-top: 80px;
+	}
+
+	&__text {
+		text-align: center;
+		h1 {
+			font-weight: 700;
+			font-size: 45px;
+			line-height: 55px;
+			color: $black;
+			margin-bottom: 20px;
+		}
+		p {
+			font-weight: 400;
+			line-height: 20px;
+		}
+	}
+
+	&__body {
+		margin-top: 21px;
+	}
+
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 540px;
+		margin: 0 auto;
+	}
+
+	&__style {
+		background: $white;
+		border: 1px solid rgba($black, 0.2);
+		border-radius: 90px;
+		font-weight: 400;
+		line-height: 20px;
+		color: #484848;
+		width: 255px;
+		height: 40px;
+		padding: 0 20px 0 20px;
+		margin-bottom: 20px;
+		&:nth-child(1) {
+			margin-right: 30px;
+		}
+		&:nth-child(3) {
+			margin-right: 30px;
+		}
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+	&__style-password {
+		width: 540px;
+	}
+
+	&__checkbox {
+		width: 20px;
+		height: 20px;
+	}
+
+	&__checkbox-text {
+		font-weight: 400;
+		line-height: 20px;
+		color: #484848;
+		margin-left: 5px;
+	}
+
+	&__checkbox-text-link {
+		color: $light-green;
+	}
+
+	&__btn {
+		margin-top: 28px;
+		background: $orange;
+		width: 540px;
+		font-weight: 700;
+		line-height: 20px;
+		color: $white;
+	}
+}
 /*******************************/
 .footer {
 
@@ -605,4 +723,3 @@ body {
 		text-align: center;
 	}
 }
-
