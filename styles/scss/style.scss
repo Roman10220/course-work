@@ -50,20 +50,28 @@ body {
 @media (max-width: 767.98px) {
 	[class*="container-max"]{
 		max-width: none;
+		padding: 0 10px;
 	}
 	[class*="container-min"]{
 		max-width: none;
+		padding: 0 10px;
 	}
 }
 .about-us {
 	margin-top: 100px;
 	&__content {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 	}
 
 	&__image {
+		padding-right: 10px;
+		max-width: 685px;
+		img {
+			max-width: 100%;
+		}
 	}
 
 	&__info {
@@ -110,9 +118,8 @@ body {
 
 	&__button {
 		margin-top: 37px;
-
 		a {
-			display: flex;
+			display: inline-flex;
 			justify-content: center;
 			align-items: center;
 			width: 220px;
@@ -124,44 +131,42 @@ body {
 			color: $white;
 		}
 	}
-}
-
-.seeds {
-	margin-top: 115px;
-	&__wrap {
-		background: url('../../img/main/seeds-backg.jpg') 0 0/100% 100% no-repeat;
-		min-height: 625px;
-		padding-top: 110px;
-	}
-
-	&__content {
-		h2 {
-			font-weight: 700;
-			font-size: 45px;
-			line-height: 55px;
-			margin-bottom: 30px;
-			margin-left: 45px;
-			color: $white;
-			position: relative;
-			&::before {
-				content: '';
-				background: url("../../img/icons/main/about-us-sheet.svg") no-repeat;
-				position: absolute;
-				top: 15px;
-				left: -45px;
-				width: 32px;
-				height: 25px;
+	@media (max-width: 1290px) {
+		&__content {
+			justify-content: center;
+		}
+		&__image {
+			margin-right: 0px;
+		}
+		&__info {
+			margin-top: 50px;
+		}
+		&__button {
+			text-align: center;
+			a {
+				width: 290px;
+				height: 47px;
 			}
 		}
-		p {
-			font-weight: 400;
-			line-height: 20px;
-			margin-bottom: 20px;
-			color: $white;
+	}
+	@media (max-width: 425.98px) {
+		& {
+			margin-top: 40px;
+		}
+		&__title {
+			h3 {
+				font-size: 32px;
+				line-height: 27px;
+				margin-bottom: 11px;
+				&::before {
+					background: url("../../img/icons/main/about-us-sheet-min.svg") no-repeat;
+					top: 10px;
+					left: -25px;
+				}
+			}
 		}
 	}
 }
-
 .slider {
 	margin-top: 90px;
 	&__content {
@@ -300,7 +305,66 @@ body {
 }
 .swiper-button-next {
 }
+.seeds {
+	margin-top: 115px;
+	&__wrap {
+		background: url('../../img/main/seeds-backg.jpg') 0 0/cover no-repeat;
+		min-height: 625px;
+		padding-top: 110px;
+		padding-bottom: 5px;
+	}
 
+	&__content {
+		h2 {
+			font-weight: 700;
+			font-size: 45px;
+			line-height: 55px;
+			margin-bottom: 10px;
+			margin-left: 45px;
+			color: $white;
+			position: relative;
+			&::before {
+				content: '';
+				background: url("../../img/icons/main/about-us-sheet.svg") no-repeat;
+				position: absolute;
+				top: 15px;
+				left: -45px;
+				width: 32px;
+				height: 25px;
+			}
+		}
+		p {
+			line-height: 20px;
+			margin-bottom: 20px;
+			color: $white;
+		}
+	}
+	@media (max-width: 767.98px) {
+		&__content {
+			p {
+				text-align: left;
+			}
+		}
+	}
+	@media (max-width: 425.98px) {
+		&__wrap {
+			padding-top: 34px;
+		}
+		&__content {
+			h2 {
+				font-size: 32px;
+				line-height: 27px;
+				&::before {
+					background: url("../../img/icons/main/about-us-sheet-min.svg") no-repeat;
+					top: 10px;
+					left: -25px;
+					width: 32px;
+					height: 25px;
+				}
+			}
+		}
+	}
+}
 .regist {
 
 	&__content {
